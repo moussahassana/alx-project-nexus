@@ -56,3 +56,61 @@ This repository documents my major learnings, experiences, and personal takeaway
 - **ERD Tools**: dbdiagram.io, drawSQL
 - **AI Tools**: ChatGPT for research and debugging
 - **Platforms**: LinkedIn, GitHub
+
+## 📚 Week 2 – Advanced SQL & Python Generators
+
+### 🔍 Focus Areas
+- **SQL Mastery**: Deep dive into advanced SQL queries and performance optimization.
+- **Python Generators & Asynchronous Programming**: Mastering memory-efficient patterns and async workflows.
+- **Milestone 1**: Initial setup and database configuration for the AirBnB Clone backend.
+
+---
+
+### 🧠 Key Learnings
+
+#### 🧮 Advanced SQL (Querying Power)
+- Practiced writing **complex queries** using `JOIN`, `GROUP BY`, subqueries, and window functions.
+- Understood the importance of **indexing** and query optimization for large datasets.
+- Learned how to analyze query performance using `EXPLAIN` and improve runtime.
+
+#### 🐍 Python Generators
+- Discovered how **generators** enable memory-efficient iteration over large datasets.
+- Used `yield` to create simple generators, and chained them for lazy processing.
+- Understood when to prefer **generators over lists** in real backend use cases.
+
+#### ⚙️ Asynchronous Programming
+- Gained foundational knowledge of **async I/O** in Python using `async def` and `await`.
+- Understood how **asynchronous workflows** help with high-concurrency backends (e.g., API handling).
+- Explored concepts of **event loops** and cooperative multitasking.
+
+#### 🧱 Milestone 1 – Project Setup
+- Set up a fully working backend environment using Django.
+- Created and configured PostgreSQL database for the AirBnB Clone.
+- Established consistent environment using `.env` files and `docker-compose`.
+
+---
+
+### 🚧 Challenges Faced
+- Encountered difficulties optimizing nested SQL queries for speed.
+
+---
+
+### ✅ Solutions Implemented
+- Revisited SQL execution plans and practiced on real-world data sets to better understand indexes.
+- Built small async Python programs to isolate and master async concepts.
+- Collaborated with peers during PLDs for feedback on SQL query structures.
+
+---
+
+### 🌟 Personal Takeaways
+- SQL is not just about retrieving data—**it's about doing it efficiently**.
+- Generators and async programming are powerful tools to **scale backend systems**.
+- Investing time in project setup and environment configuration pays off later.
+
+---
+
+## 🛠️ Technologies & Tools Used
+- **PostgreSQL**: Relational database system.
+- **Python (asyncio)**: Asynchronous programming in Python.
+- **Docker & Docker Compose**: Consistent development environments.
+- **Django ORM**: For querying and managing database models.
