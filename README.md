@@ -230,3 +230,48 @@ This repository documents my major learnings, experiences, and personal takeaway
 - **`unittest` & `pytest`**: For writing and running tests.
 - **Django REST Framework**: For building RESTful APIs.
 - **PostgreSQL**: For persisting backend models and test data.
+
+---
+
+## 📚 Week 5 – Authentication, Permissions & Django Middleware
+
+### 🔍 Focus Areas
+- **Authentication & Authorization** in Django REST Framework (DRF)
+- **Middleware and Advanced Request Handling**
+- Improving backend security, scalability, and structure
+
+---
+
+### 🧠 Key Learnings
+
+#### 🔐 Authentication & Permissions (DRF)
+- Explored the **authentication flow** in Django and DRF (token-based and session-based).
+- Implemented **default and custom permission classes** to restrict access to endpoints.
+- Understood the difference between:
+  - `IsAuthenticated`
+  - `IsAdminUser`
+  - `AllowAny`
+  - Custom permissions using `has_permission()` and `has_object_permission()`
+- Practiced securing sensitive routes with **token-based authentication**.
+
+#### 🧱 Middleware Fundamentals
+- Learned how **Django Middleware** processes requests and responses globally.
+- Explored built-in middleware types: `SecurityMiddleware`, `AuthenticationMiddleware`, etc.
+- Developed a **custom middleware** to log request details and user agent.
+- Understood the middleware execution flow and how to debug issues from middleware layers.
+
+---
+
+### 🌟 Personal Takeaways
+- Authentication and permissions are **critical for building secure, multi-user systems**.
+- Middlewares allow centralized processing but must be used with **caution and clarity**.
+- A good backend anticipates misuse and protects against it—**by design**.
+
+---
+
+## 🛠️ Tools & Libraries
+- **Django REST Framework**: Authentication & permission management.
+- **Django Middleware API**: For intercepting and processing requests/responses.
+- **Postman / Insomnia**: For testing token-protected endpoints.
+
+---
