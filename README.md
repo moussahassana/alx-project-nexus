@@ -114,3 +114,62 @@ This repository documents my major learnings, experiences, and personal takeaway
 - **Python (asyncio)**: Asynchronous programming in Python.
 - **Docker & Docker Compose**: Consistent development environments.
 - **Django ORM**: For querying and managing database models.
+
+---
+
+## 📚 Week 3 – Python Decorators, Context Managers & Monthly Worklog
+
+### 🔍 Focus Areas
+- **Advanced Python**: Deep understanding of decorators, context managers, and async techniques.
+- **Worklog Practice**: Beginning the habit of structured reflection and documentation of learning progress.
+
+---
+
+### 🧠 Key Learnings
+
+#### 🧩 Python Decorators
+- Learned how **decorators** add functionality to functions without modifying their core logic.
+- Practiced writing custom decorators for logging, caching, and authorization control.
+- Gained deeper understanding of **higher-order functions** and Python closures.
+
+#### 📦 Context Managers
+- Mastered the use of `with` statements to manage resources like files, connections, and locks.
+- Implemented **custom context managers** using `__enter__()` and `__exit__()` methods.
+- Explored how context managers promote **clean, readable, and safe resource handling**.
+
+#### ⚙️ Asynchronous Programming (Continued)
+- Revisited async patterns from Week 2, focusing on integrating `async def` with real-world Django views.
+- Learned how to **manage coroutines** and use `asyncio.gather()` to execute them concurrently.
+- Understood how async helps scale I/O-bound operations in backend services.
+
+#### 📝 Monthly Worklog
+- Started my **monthly worklog** to track progress, challenges, and breakthroughs.
+- Reflected on how structured documentation boosts learning and professional visibility.
+- Used worklog entries to prepare better peer reviews and showcase tangible growth.
+
+---
+
+### 🚧 Challenges Faced
+
+- Difficulty remembering syntax for writing custom decorators with arguments.
+
+---
+
+### ✅ Solutions Implemented
+- Studied open-source libraries to see real-life use of decorators and context managers.
+- Practiced repeatedly by writing utilities using decorators and resource wrappers.
+- Reviewed documentation and used ChatGPT to break down syntax into simpler steps.
+
+---
+
+### 🌟 Personal Takeaways
+- Decorators and context managers are **must-know tools** for writing clean and efficient Python code.
+- Structured reflection like the monthly worklog improves **self-awareness and retention**.
+- Python's power lies in its elegance—and learning to use its advanced features pays off.
+
+---
+
+## 🛠️ Tools & Libraries
+- **Python (`functools`, `contextlib`)**: For decorators and context managers.
+- **Jupyter Notebooks / PyCharm**: For testing isolated Python features.
+- **Markdown**: For formatting detailed worklog entries.
