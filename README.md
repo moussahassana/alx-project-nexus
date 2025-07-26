@@ -173,3 +173,60 @@ This repository documents my major learnings, experiences, and personal takeaway
 - **Python (`functools`, `contextlib`)**: For decorators and context managers.
 - **Jupyter Notebooks / PyCharm**: For testing isolated Python features.
 - **Markdown**: For formatting detailed worklog entries.
+
+---
+
+## 📚 Week 4 – Testing Strategies & Building Robust APIs
+
+### 🔍 Focus Areas
+- **Software Testing**: Unit tests, integration tests, and test automation using `unittest` and `pytest`.
+- **API Development**: Creating robust, scalable APIs with Django REST Framework.
+- **Milestone 2**: Implementation of models, serializers, and seeders for the AirBnB Clone project.
+
+---
+
+### 🧠 Key Learnings
+
+#### 🧪 Testing in Python
+- Gained hands-on experience writing **unit tests** with Python's `unittest` module.
+- Understood the importance of **test isolation, setup/teardown**, and mocking dependencies.
+- Learned to create **integration tests** to verify the behavior of combined components.
+- Explored **`pytest`** as an advanced testing framework offering better readability and fixtures.
+
+#### 🌐 Building Robust APIs
+- Explored **Django REST Framework (DRF)** to build RESTful APIs efficiently.
+- Defined **serializers** to convert model instances into JSON format and vice versa.
+- Created **viewsets and routers** to manage API endpoints in a modular way.
+- Applied **status codes and exception handling** for clean client-server communication.
+
+#### 🧱 Milestone 2 – Models & Seeders
+- Designed and implemented Django **models** to represent core entities of the backend.
+- Created **initial data population scripts** (seeders) for development and testing.
+- Ensured consistency between **schema design** and Django ORM models.
+
+---
+
+### 🚧 Challenges Faced
+- Misconfigured some test cases, leading to false positives and confusing results.
+- Faced serialization errors due to mismatches between model fields and input data.
+
+---
+
+### ✅ Solutions Implemented
+- Used `setUp` and `tearDown` methods to ensure clean test environments.
+- Revisited DRF documentation to understand nested serializers and custom validations.
+- Reviewed test output logs in detail to debug and isolate failing tests.
+
+---
+
+### 🌟 Personal Takeaways
+- Writing tests is **not optional**—it’s essential for scalable and maintainable systems.
+- DRF accelerates backend API development, but it requires **discipline and structure**.
+- Automating data seeding reduces manual configuration time and improves testing consistency.
+
+---
+
+## 🛠️ Tools & Libraries
+- **`unittest` & `pytest`**: For writing and running tests.
+- **Django REST Framework**: For building RESTful APIs.
+- **PostgreSQL**: For persisting backend models and test data.
