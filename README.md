@@ -275,3 +275,223 @@ This repository documents my major learnings, experiences, and personal takeaway
 - **Postman / Insomnia**: For testing token-protected endpoints.
 
 ---
+
+## 📚 Week 6 – Signals, Advanced ORM & Milestone 3
+
+### 🔍 Focus Areas
+- **Django Signals** and custom event listeners
+- **Advanced ORM techniques** for optimized data access
+- **Milestone 3**: Building API views and endpoint logic
+
+---
+
+### 🧠 Key Learnings
+
+#### 🔔 Signals & Event Listeners
+- Learned to use Django’s **signals** to handle decoupled events (e.g., `post_save`, `pre_delete`)
+- Implemented **custom signal handlers** for auditing and logging purposes
+- Understood how signals improve modularity and **loose coupling**
+
+#### 🧠 Advanced ORM
+- Mastered **annotate, F(), Q() expressions**, and prefetch/select-related queries
+- Optimized queryset performance using lazy evaluation and caching
+- Built complex joins and aggregations natively in Django ORM
+
+#### ⚙️ Milestone 3 – Views and Endpoints
+- Implemented **API views** using DRF’s generic views and viewsets
+- Defined and tested **endpoints for user and listing operations**
+- Applied **pagination, filtering, and query param handling**
+
+---
+
+### 🌟 Personal Takeaways
+- Signals offer **elegance and separation of concerns** in large applications
+- ORM mastery is essential to reduce **raw SQL dependency** and improve readability
+- Efficient APIs start with well-structured, optimized views
+
+---
+
+## 📚 Week 7 – Shell Scripting, Git Flows, Docker & Web Infrastructure
+
+### 🔍 Focus Areas
+- **Advanced shell scripting** for automation
+- **Version control** using Git strategies (feature branches, rebasing)
+- **Docker for local environments** and containerized backend
+- **Web infrastructure fundamentals**
+
+---
+
+### 🧠 Key Learnings
+
+#### 🖥️ Advanced Shell Scripting
+- Used shell scripts to automate setup, testing, and deployment tasks
+- Applied loops, functions, and conditional logic effectively
+
+#### 🔀 Git-Flows
+- Adopted **branching strategies** like GitFlow (feature, dev, release branches)
+- Improved team collaboration via PRs and rebase vs. merge policies
+
+#### 🐳 Docker & Containers
+- Built Docker images and defined multi-container setups with `docker-compose`
+- Understood the difference between **images, containers, volumes, and networks**
+
+#### 🌐 Web Infrastructure
+- Studied the components of a **production-grade web stack**: DNS, Load Balancer, Firewall, Monitoring
+- Understood **client-server architecture, ports, protocols**, and NGINX basics
+
+---
+
+### 🌟 Personal Takeaways
+- Shell scripting saves time and prevents **human error**
+- Mastering Git means mastering **collaboration**
+- Docker makes the backend **portable, scalable, and reproducible**
+
+---
+
+## 📚 Week 8 – Kubernetes, SSH, GraphQL & Milestone 4
+
+### 🔍 Focus Areas
+- **Container orchestration with Kubernetes**
+- **Secure remote access with SSH**
+- **Intro to GraphQL** as an alternative API model
+- **Milestone 4**: Chapa Payment Integration
+
+---
+
+### 🧠 Key Learnings
+
+#### ☸️ Kubernetes
+- Learned how Kubernetes manages containers at scale
+- Understood **pods, deployments, and services**
+
+#### 🔐 SSH
+- Mastered **key-based authentication** and secure file transfers
+- Used `ssh`, `scp`, and `rsync` for server interactions
+
+#### 🔗 GraphQL
+- Compared REST vs. GraphQL
+- Built **GraphQL schemas, queries, and mutations** with Django Graphene
+
+#### 💳 Milestone 4 – Chapa API
+- Integrated Chapa for **payment processing**
+- Handled webhooks and transaction validation
+- Ensured **API security and reliability** during payment flows
+
+---
+
+### 🌟 Personal Takeaways
+- Kubernetes is essential for **scalable deployment**
+- SSH remains a critical skill for **DevOps and sysadmin tasks**
+- GraphQL introduces a **flexible and efficient API layer**
+
+---
+
+## 📚 Week 9 – CI/CD, Web Servers, Load Balancing & Firewalls
+
+### 🔍 Focus Areas
+- **Continuous Integration/Deployment** with Jenkins and GitHub Actions
+- **Web servers and child processes**
+- **Load balancing and server scaling**
+- **Network security with firewalls**
+
+---
+
+### 🧠 Key Learnings
+
+#### ⚙️ CI/CD Pipelines
+- Built **pipelines with GitHub Actions** and basic Jenkins jobs
+- Automated linting, testing, and deployment to staging environments
+
+#### 🌐 Web Servers
+- Learned the lifecycle of a web request
+- Understood **child processes**, threading, and performance bottlenecks
+
+#### ⚖️ Load Balancing
+- Configured **NGINX load balancing**
+- Understood horizontal scaling and failover design
+
+#### 🔥 Firewalls
+- Used firewall rules to control **incoming/outgoing traffic**
+- Applied security best practices for backend exposure
+
+---
+
+### 🌟 Personal Takeaways
+- CI/CD is the foundation of **modern DevOps**
+- Load balancers ensure **high availability**
+- Firewalls are the **first line of defense** for backend systems
+
+---
+
+## 📚 Week 10 – SSL, Caching, Cron Jobs & Milestone 5
+
+### 🔍 Focus Areas
+- **SSL/HTTPS** for secure communication
+- **Redis and Django caching strategies**
+- **Automated background tasks** with crons
+- **Milestone 5**: Background jobs (e.g., email notifications)
+
+---
+
+### 🧠 Key Learnings
+
+#### 🔐 SSL & HTTPS
+- Set up SSL using certbot and Let’s Encrypt
+- Learned about **TLS handshake**, certificates, and trust chains
+
+#### ⚡ Caching
+- Implemented **Redis caching** for views, templates, and queries
+- Understood cache invalidation and TTL (Time To Live)
+
+#### 🕒 Scheduling
+- Used **cron** to automate recurring backend tasks
+- Integrated scheduled jobs into Django using `django-cron` or Celery
+
+#### 📬 Milestone 5 – Background Jobs
+- Set up **asynchronous email notifications**
+- Ensured retry mechanisms and task idempotency
+
+---
+
+### 🌟 Personal Takeaways
+- SSL is **non-negotiable** for public-facing applications
+- Caching boosts performance significantly but must be **used strategically**
+- Cron jobs are vital for **backend automation and task scheduling**
+
+---
+
+## 📚 Week 11 – Security, Analytics, Monitoring & Final Milestone
+
+### 🔍 Focus Areas
+- **User tracking, analytics, and IP monitoring**
+- **Web server and database monitoring**
+- **Final Deployment & Documentation**
+
+---
+
+### 🧠 Key Learnings
+
+#### 🛡️ Security & IP Tracking
+- Logged **IP addresses, user behavior**, and login events
+- Used tools like **GeoIP and IPinfo** to analyze access patterns
+
+#### 📊 Webstack Monitoring
+- Implemented basic **server monitoring** using tools like Netdata or UptimeRobot
+- Monitored **CPU, memory, DB connections**, and request logs
+
+#### 🚀 Milestone 6 – Deployment
+- Deployed full stack to **cloud platforms**
+- Created production-ready documentation and API references
+
+---
+
+### 🌟 Personal Takeaways
+- Monitoring ensures **reliability and accountability**
+- The final milestone brought together **everything learned** into a single, functional backend
+- Documentation is just as important as the code
+
+---
+
+## 🏁 Final Thoughts
+
+The ALX ProDev Backend Engineering journey has transformed my backend development approach. From building efficient APIs to deploying secure, production-ready systems, this program taught me how to think, design, and collaborate like a professional backend engineer.
