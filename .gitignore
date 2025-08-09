@@ -1,0 +1,60 @@
+# --- Python build/cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments (Poetry/local) ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Poetry ---
+# Keep pyproject.toml and poetry.lock committed
+# (poetry.lock SHOULD be tracked for apps)
+
+# --- Django ---
+*.log
+*.sqlite3
+db.sqlite3
+tmp/
+static/
+staticfiles/
+media/
+
+# Do NOT ignore migrations; we want them in Git
+# (no rules here so they stay tracked)
+
+# --- Env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Tests & tooling ---
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+pytest_cache/
+.tox/
+.mypy_cache/
+ruff_cache/
+.cache/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Docker / runtime ---
+*.pid
+celerybeat-schedule
