@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,10 +12,13 @@ load_dotenv(BASE_DIR / ".env")  # loads .env if present
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-hn_mdxwq=6uce(*5w%z!r9igp#i$j+niw5io+aj(q90ym48ob0")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "True") == "True"
+DEBUG = os.getenv("DEBUG", "Fasle") == "Fasle"
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
+ENV = os.getenv('DJANGO_ENV', 'development')
+
+DEFAULT_DB_URL = 'sqlite:///db.sqlite3'
 
 # Application definition
 
@@ -86,21 +90,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# --- PostgreSQL ---
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB", "ecomm"),
-        "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", ""),
-        "HOST": os.getenv("POSTGRES_HOST", "localhost"),  
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
-        "CONN_MAX_AGE": int(os.getenv("DB_CONN_MAX_AGE", "60")),   # persistent connections
-        "OPTIONS": {
-            "connect_timeout": int(os.getenv("DB_CONNECT_TIMEOUT", "5")),
-        },
-        "ATOMIC_REQUESTS": True,  
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL', DEFAULT_DB_URL),
+        conn_max_age=600,  # Keeps connections open for performance
+        ssl_require=(ENV == 'production')  # Force SSL only in production
+    )
 }
 
 
@@ -144,3 +139,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware", *MIDDLEWARE]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
