@@ -13,6 +13,7 @@ A Django REST Framework backend for managing an e-commerce product catalog with 
 - **Pagination** for large datasets
 - **OpenAPI/Swagger documentation** at `/api/docs/`
 - **Optimized DB** with indexes and query optimizations
+- **Database Seeder** for generating sample categories, products, and images
 
 ---
 
@@ -21,7 +22,7 @@ A Django REST Framework backend for managing an e-commerce product catalog with 
 - **Auth:** SimpleJWT
 - **Database:** PostgreSQL
 - **Docs:** drf-spectacular
-- **Deployment:** Render/Railway
+- **Deployment:** Render
 
 ---
 
@@ -66,7 +67,21 @@ poetry run python manage.py migrate
 poetry run python manage.py createsuperuser
 ```
 
-### 6️⃣ Run server
+### 6️⃣ Seed database (optional)
+
+Run the seeder command to populate sample data:
+
+```bash
+poetry run python manage.py seed_data
+```
+
+This will create:
+
+* Sample **Product Categories**
+* Sample **Products**
+* Sample **Product Images**
+
+### 7️⃣ Run server
 
 ```bash
 poetry run python manage.py runserver
@@ -106,7 +121,7 @@ poetry run python manage.py runserver
 
 ## 🌐 Deployment
 
-**Hosted API:** on render
+**Hosted API:** [https://alx-project-nexus-adr5.onrender.com/api/docs](https://alx-project-nexus-adr5.onrender.com/api/docs)
 
 ---
 
